@@ -32,7 +32,6 @@ window.addEventListener("load",()=>{
 // Start Recognization here.
 
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-
 let recognization = new speechRecognition()
 recognization.onresult = (event)=>{
     let currentIndex = event.resultIndex
@@ -56,7 +55,7 @@ function takeCommand(message){
         speak("Hello sir, what can i help you? ");
     }
     else if(message.includes("who are you")){
-        speak(" i am virtual assistant ,created by vashu sir.");
+        speak(" i am virtual assistant ,created by mantu sir.");
     }
    else if(message.includes("open youtube")){
         speak("opening youtube");
